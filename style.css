@@ -1,0 +1,320 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.chat__box {
+  position: relative;
+  height: 100vh;
+  background-color: #e7e7e7;
+}
+
+/* basic styling */
+.wrap__body {
+  text-align: center;
+  height: 100vh;
+  padding-top: 10%;
+}
+
+h1 {
+  color: #ff6600;
+  text-transform: uppercase;
+  font-family: "open sans";
+}
+
+/*
+    styling chat box section
+*/
+
+/* safari and chrome */
+@-webkit-keyframes fadeIn-out {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  10% {
+    bottom: 50px;
+    opacity: 1;
+  }
+
+  80% {
+    bottom: 50px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 0;
+  }
+}
+
+/* firefox  */
+@-moz-keyframes fadeIn-out {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  10% {
+    bottom: 50px;
+    opacity: 1;
+  }
+
+  80% {
+    bottom: 50px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 0;
+  }
+}
+
+/* opera */
+@-o-keyframes fadeIn-out {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  10% {
+    bottom: 50px;
+    opacity: 1;
+  }
+  80% {
+    bottom: 50px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 0;
+  }
+}
+
+/* edge */
+@-ms-keyframes fadeIn-out {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  10% {
+    bottom: 50px;
+    opacity: 1;
+  }
+  80% {
+    bottom: 50px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 0;
+  }
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  10% {
+    bottom: 50px;
+    opacity: 1;
+  }
+
+  80% {
+    bottom: 50px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 0;
+  }
+}
+
+.chat__box--user {
+  width: 80px;
+  height: 80px;
+  background: #ff6600;
+  border-radius: 50%;
+  position: absolute;
+
+
+  right: 10px;
+  bottom: 50px;
+
+  z-index: 100;
+
+
+  opacity: 0;
+  -webkit-animation: fadeIn-out 10s;
+  -moz-animation: fadeIn-out 10s;
+  -o-animation: fadeIn-out 10s;
+  -ms-animation: fadeIn-out 10s;
+  animation: fadeIn-out 10s;
+
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+/* safari and chrome */
+@-webkit-keyframes slide-out {
+  0% {
+    right: 0;
+    opacity: 0;
+  }
+  15% {
+    right: 30px;
+    opacity: 1;
+  }
+  80% {
+    right: 30px;
+    opacity: 1;
+  }
+  100% {
+    right: 0;
+    opacity: 0;
+  }
+}
+
+/* firefox */
+@-moz-keyframes slide-out {
+  0% {
+    right: 0;
+    opacity: 0;
+  }
+  15% {
+    right: 30px;
+    opacity: 1;
+  }
+  80% {
+    right: 30px;
+    opacity: 1;
+  }
+  100% {
+    right: 0;
+    opacity: 0;
+  }
+}
+
+/* opera */
+@-o-keyframes slide-out {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  10% {
+    bottom: 50px;
+    opacity: 1;
+  }
+  80% {
+    bottom: 50px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 0;
+  }
+}
+
+/* edge */
+@-ms-keyframes slide-out {
+  0% {
+    right: 0;
+    opacity: 0;
+  }
+  15% {
+    right: 30px;
+    opacity: 1;
+  }
+  80% {
+    right: 30px;
+    opacity: 1;
+  }
+  100% {
+    right: 0;
+    opacity: 0;
+  }
+}
+
+/* standard */
+@keyframes slide-out {
+  0% {
+    right: 0;
+    opacity: 0;
+  }
+  15% {
+    right: 30px;
+    opacity: 1;
+  }
+  80% {
+    right: 30px;
+    opacity: 1;
+  }
+  100% {
+    right: 0;
+    opacity: 0;
+  }
+}
+
+.chat__box--message {
+  width: 220px;
+  padding-left: 30px;
+  border-radius: 80px;
+  background-color: #595959;
+
+  position: absolute;
+  right: 30px;
+  bottom: 65px;
+
+
+  opacity: 0;
+  -webkit-animation: slide-out 6s;
+  -moz-animation: slide-out 6s;
+  -o-animation: slide-out 6s;
+  -ms-animation: slide-out 6s;
+  animation: slide-out 6s;
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+p {
+  color: #e7e7e7;
+  line-height: 50px;
+  font-family: "open sans";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes pro-active-chatbot-text {
+  0% {
+    right: 0;
+    opacity: 0;
+  }
+  15% {
+    right: 30%;
+    opacity: 1;
+  }
+  80% {
+    right: 30%;
+    opacity: 1;
+  }
+  100% {
+    right: 0;
+    opacity: 0;
+  }
+}
