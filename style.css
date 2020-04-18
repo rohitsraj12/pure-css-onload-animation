@@ -1,7 +1,11 @@
-
 * {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 .chat__box {
@@ -24,7 +28,7 @@ h1 {
 }
 
 /*
-    styling chat box section
+    animation
 */
 
 /* safari and chrome */
@@ -130,34 +134,6 @@ h1 {
   }
 }
 
-.chat__box--user {
-  width: 80px;
-  height: 80px;
-  background: #ff6600;
-  border-radius: 50%;
-  position: absolute;
-
-
-  right: 10px;
-  bottom: 50px;
-
-  z-index: 100;
-
-
-  opacity: 0;
-  -webkit-animation: fadeIn-out 10s;
-  -moz-animation: fadeIn-out 10s;
-  -o-animation: fadeIn-out 10s;
-  -ms-animation: fadeIn-out 10s;
-  animation: fadeIn-out 10s;
-
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
-  -ms-animation-delay: 2s;
-  animation-delay: 2s;
-}
-
 /* safari and chrome */
 @-webkit-keyframes slide-out {
   0% {
@@ -258,6 +234,54 @@ h1 {
   }
 }
 
+@keyframes pro-active-chatbot-text {
+  0% {
+    right: 0;
+    opacity: 0;
+  }
+  15% {
+    right: 30%;
+    opacity: 1;
+  }
+  80% {
+    right: 30%;
+    opacity: 1;
+  }
+  100% {
+    right: 0;
+    opacity: 0;
+  }
+}
+
+/*
+    styling chat box section
+*/
+.chat__box--user {
+  width: 80px;
+  height: 80px;
+  background: #ff6600;
+  border-radius: 50%;
+  position: absolute;
+
+  right: 10px;
+  bottom: 50px;
+
+  z-index: 100;
+
+  opacity: 0;
+  -webkit-animation: fadeIn-out 10s;
+  -moz-animation: fadeIn-out 10s;
+  -o-animation: fadeIn-out 10s;
+  -ms-animation: fadeIn-out 10s;
+  animation: fadeIn-out 10s;
+
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
 .chat__box--message {
   width: 220px;
   padding-left: 30px;
@@ -267,7 +291,6 @@ h1 {
   position: absolute;
   right: 30px;
   bottom: 65px;
-
 
   opacity: 0;
   -webkit-animation: slide-out 6s;
@@ -286,35 +309,4 @@ p {
   color: #e7e7e7;
   line-height: 50px;
   font-family: "open sans";
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-@keyframes pro-active-chatbot-text {
-  0% {
-    right: 0;
-    opacity: 0;
-  }
-  15% {
-    right: 30%;
-    opacity: 1;
-  }
-  80% {
-    right: 30%;
-    opacity: 1;
-  }
-  100% {
-    right: 0;
-    opacity: 0;
-  }
 }
